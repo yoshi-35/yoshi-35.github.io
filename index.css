@@ -1,56 +1,62 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f5f5f5;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
 }
 
-main {
+.hero {
+    background: #4CAF50;
+    color: #fff;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px);  /* viewport height minus header and footer height */
-    background-color: #f4f4f4;
+    justify-content: center;
 }
 
-.content {
-    max-width: 800px;
-    margin: 20px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.hero-content {
+    text-align: center;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+    background: #fff;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about, .university, .research, .contact {
+    background: #f4f4f4;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1rem 0;
 }
+
